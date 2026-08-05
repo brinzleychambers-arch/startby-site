@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StartBy — Privacy Policy and Support</title>
+<style>
+  :root {
+    --field: #08090A;
+    --card: #131618;
+    --ink: #F2F3F4;
+    --soft: #C3C9CE;
+    --meta: #8F959B;
+    --line: rgba(255,255,255,0.09);
+    --accent: #5AB0FF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px 90px;
+    background: var(--field);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; }
+  header { padding: 64px 0 40px; border-bottom: 1px solid var(--line); }
+  .mark {
+    font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--meta); margin: 0 0 14px;
+  }
+  h1 { font-size: 34px; line-height: 1.15; margin: 0 0 10px; letter-spacing: -0.8px; }
+  .sub { color: var(--soft); margin: 0; font-size: 17px; }
+  .updated { color: var(--meta); font-size: 14px; margin-top: 18px; }
+  h2 {
+    font-size: 22px; margin: 46px 0 12px; letter-spacing: -0.3px;
+    padding-top: 8px;
+  }
+  h3 { font-size: 17px; margin: 30px 0 8px; color: var(--ink); }
+  p { margin: 0 0 16px; color: var(--soft); }
+  ul { margin: 0 0 16px; padding-left: 22px; color: var(--soft); }
+  li { margin-bottom: 9px; }
+  strong { color: var(--ink); font-weight: 600; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 16px; padding: 22px 24px; margin: 26px 0;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 0; }
+  .lead { color: var(--ink); font-size: 18px; }
+  footer {
+    margin-top: 60px; padding-top: 26px; border-top: 1px solid var(--line);
+    color: var(--meta); font-size: 14px;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --field: #F1F0ED; --card: #FFFFFF; --ink: #15171A;
+      --soft: #3C4349; --meta: #626D79; --line: rgba(0,0,0,0.12);
+      --accent: #1E5FA8;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="mark">StartBy</p>
+  <h1>Privacy Policy</h1>
+  <p class="sub">What StartBy collects, what leaves your phone, and what never does.</p>
+  <p class="updated">Last updated 5 August 2026</p>
+</header>
+
+<div class="card">
+  <p class="lead"><strong>The short version.</strong> Almost everything StartBy
+  knows about you stays on your phone. Your events, your trips, your settings
+  and everything the app has learned about how long places take you are stored
+  on the device and are not uploaded anywhere. There is no advertising, no
+  analytics and no tracking of any kind.</p>
+</div>
+
+<h2>What stays on your phone</h2>
+
+<p>All of the following is stored on your device only. It is not sent to us,
+and it is not sent to anyone else:</p>
+
+<ul>
+  <li>The events you add — their names, addresses and times</li>
+  <li>Your trip history, including when you left and when you arrived</li>
+  <li>Everything the app has learned: how long each place takes you to get
+      into, how long you take to get ready, how long after being told to
+      leave you usually leave</li>
+  <li>Your settings, including your chosen colour and your timings</li>
+  <li>The name and phone number of anyone you have chosen to notify if you
+      are running late</li>
+</ul>
+
+<p>Deleting the app removes all of it.</p>
+
+<h2>What leaves your phone, and why</h2>
+
+<h3>Addresses, to work out travel time</h3>
+
+<p>To tell you when to leave, StartBy has to ask how long the journey takes.
+When it does, it sends where you are starting from and where you are going to
+our server, which passes them to <strong>Google Maps Platform</strong> and
+returns the travel time. Google's handling of that request is covered by
+<a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+
+<p>The same happens when you search for an address: what you have typed, and
+roughly where you are, are sent so the suggestions are nearby ones. Nothing
+about those searches is stored on our server.</p>
+
+<h3>Crash reports, so faults can be found</h3>
+
+<p>If StartBy fails, a report is sent to <strong>Sentry</strong>, a crash
+reporting service, so the fault can be found and fixed. The report contains
+the error and where in the code it happened, along with your device model and
+iOS version.</p>
+
+<p>It does not contain your events, your addresses, your location, or anything
+you have typed. StartBy is configured not to send personal information, and
+the details of network requests are stripped from these reports before they
+leave the phone. Sentry's handling is covered by
+<a href="https://sentry.io/privacy/">Sentry's Privacy Policy</a>.</p>
+
+<h3>An identifier, to run the free trial</h3>
+
+<p>If you sign in with Apple, StartBy stores the identifier Apple gives it,
+along with the date your free trial started. That is the whole record. It
+exists so the trial cannot be restarted by deleting and reinstalling the app.
+If Apple gives us your name, it is used only to address you in the app.</p>
+
+<p>We also count how many route requests each identifier makes, so that one
+person cannot run up a bill for everyone. That count is a number, not a
+history of where you went.</p>
+
+<h2>Location</h2>
+
+<p>StartBy uses your location for two things, and both are visible to you.</p>
+
+<p><strong>Working out when to leave.</strong> The app checks where you are
+when you open it or add an event, so it can measure the journey from where
+you actually are.</p>
+
+<p><strong>Noticing when you leave and arrive, if you turn it on.</strong>
+This is optional and off unless you allow it. When it is on, your phone
+watches for you crossing into or out of two areas: roughly where you are
+setting off from, and where you are going. Crossing them is what lets the app
+check its own estimates against what really happened.</p>
+
+<ul>
+  <li>StartBy does not record a trail of where you have been</li>
+  <li>Your coordinates are not sent to our server</li>
+  <li>The two areas are only watched around the time you are due to leave</li>
+  <li>You can turn automatic logging off at any time in the app, under
+      Settings, and everything still works — you just tap when you leave and
+      when you arrive instead</li>
+</ul>
+
+<h2>Your calendar</h2>
+
+<p>If you allow it, StartBy reads your calendar so it can offer the events you
+have to travel to. It reads the title, the location and the time, and only for
+events in the next week. It never writes to your calendar except when you edit
+an event you created yourself, and it will not alter anything with other
+people invited.</p>
+
+<p>Your calendar is read on your phone. Its contents are not uploaded.</p>
+
+<h2>Your contacts</h2>
+
+<p>StartBy never asks for your address book. When you choose someone to notify,
+your phone shows you its own contact picker and hands back only the one person
+you picked. That name and number are stored on your device so the app can offer
+them again. Messages are written for you but never sent — you press send
+yourself, in your own Messages app.</p>
+
+<h2>What StartBy does not do</h2>
+
+<ul>
+  <li>No advertising, and no advertising identifiers</li>
+  <li>No analytics, and no third-party trackers</li>
+  <li>Nothing is sold or shared with data brokers</li>
+  <li>No profile is built about you</li>
+</ul>
+
+<h2>Deleting your data</h2>
+
+<p>Everything can be deleted from inside the app, in one step, under
+<strong>Settings &rarr; Starting over &rarr; Delete your account</strong>.
+That removes the trial record held against your Apple identifier from our
+server, and every piece of data StartBy holds on your phone. It cannot be
+undone and it does not need to go through us.</p>
+
+<p>If you only want to clear what is on the phone and keep your trial record,
+<strong>Settings &rarr; Starting over &rarr; Reset everything</strong> does
+that instead. Deleting the app also removes everything held on the phone.</p>
+
+<p>Signing in with Apple is revoked by you, not by the app: iPhone
+<strong>Settings &rarr; your name &rarr; Sign in with Apple</strong>. No app
+can do that on your behalf.</p>
+
+<h2>Children</h2>
+
+<p>StartBy is not directed at children and does not knowingly collect anything
+from anyone under 13.</p>
+
+<h2>Changes</h2>
+
+<p>If this policy changes, the date at the top changes with it. Anything
+significant will be said in the app.</p>
+
+<h2 id="support">Support</h2>
+
+<div class="card">
+  <p><strong>Email:</strong>
+     <a href="mailto:hello.startby@gmail.com">hello.startby@gmail.com</a></p>
+  <p>Questions, problems, or anything the app got wrong. If a journey time
+     looked wrong, say roughly when and where you were going — the app keeps
+     a trip log you can send from
+     <strong>Settings &rarr; If something looks wrong</strong>, which makes it
+     much easier to work out what happened.</p>
+</div>
+
+<footer>
+  StartBy &middot; Brinzley Chambers
+</footer>
+
+</div>
+</body>
+</html>
