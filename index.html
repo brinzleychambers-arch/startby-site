@@ -83,7 +83,7 @@
 <body>
   <main>
     <h1>StartBy Privacy Policy</h1>
-    <p class="updated">Last updated 12 August 2026</p>
+    <p class="updated">Last updated 15 August 2026</p>
  
     <p class="lead">
       StartBy works out when you need to start getting ready so that you arrive
@@ -101,8 +101,7 @@
     <h2>What stays on your phone</h2>
  
     <p>
-      Almost everything. The following is stored only on your device and is
-      never uploaded:
+      Almost everything. The following is stored only on your device:
     </p>
  
     <ul>
@@ -120,7 +119,18 @@
     </ul>
  
     <p>
-      If you delete the app, all of this goes with it.
+      Event names, addresses and your trip history are never uploaded. The one
+      exception is described under Location below: for a journey StartBy is
+      actively watching, two map points and two times are held on the server
+      until the journey is over.
+    </p>
+ 
+    <p>
+      Deleting the app removes all of this from your phone. Two things
+      deliberately survive it: the record of when your free trial started, which
+      iOS keeps in its secure store so that reinstalling does not hand out a
+      second trial, and whatever is held on the server, which is covered under
+      Deleting everything below.
     </p>
  
     <h2>Location</h2>
@@ -142,8 +152,15 @@
       <strong>Rechecking traffic.</strong> If your journey is one StartBy is
       watching, those two points are stored on StartBy's server together with
       the times of the event, so the traffic can be checked again while your
-      phone is closed. Nothing else about the event is stored — not its name,
-      not who is going, not your calendar.
+      phone is closed. Stored alongside them: whether you are driving, walking,
+      cycling or taking transit, whether you avoid tolls, and your time zone and
+      language — the last two only so that a message about your leaving time
+      names the right hour where you are.
+    </p>
+ 
+    <p>
+      Nothing else about the event goes with it. Not its name, not the address
+      as text, not who is going, not your calendar.
     </p>
  
     <p>
@@ -201,9 +218,21 @@
  
     <p>
       StartBy uses Sign in with Apple. Apple gives the app an identifier for
-      you, and your name and email address if you choose to share them. The
-      identifier is stored on StartBy's server so that your free trial follows
-      you to a new phone. Your name and email stay on your device.
+      you, and your email address — the real one, or the private relay address
+      Apple creates if you choose to hide it.
+    </p>
+ 
+    <p>
+      Both are stored on StartBy's server. The identifier is what makes your
+      free trial follow you to a new phone, and it is what proves a request
+      really comes from you rather than from somebody who has guessed your
+      identifier. The email address comes with it as part of how Apple signs you
+      in. Neither is used to contact you, and neither is shared with anyone.
+    </p>
+ 
+    <p>
+      Your name, if you share it, stays on your device and is used only to greet
+      you.
     </p>
  
     <p>
@@ -244,7 +273,15 @@
  
     <p>
       You can delete your account from inside the app, in Settings. This removes
-      what is held on StartBy's server and everything on your phone.
+      everything held on StartBy's server — your identifier, your email address,
+      your trial record, any journey being watched, and the token used to send
+      you notifications — and everything StartBy has stored on your phone,
+      including the trial record that would otherwise survive deleting the app.
+    </p>
+ 
+    <p>
+      If any part of that cannot be completed, the app tells you and nothing is
+      removed, rather than reporting success and leaving something behind.
     </p>
  
     <p>
@@ -262,13 +299,20 @@
     <ul>
       <li>
         <strong>Supabase</strong> — hosts StartBy's server, which holds your
-        Apple identifier, your trial start date, and the start and end points of
-        journeys being watched
+        Apple identifier and email address, your trial start date, the start and
+        end points of journeys being watched, the notification token your phone
+        was issued, and a count of how many route lookups you have made in the
+        current hour
       </li>
       <li>
         <strong>Google Maps Platform</strong> — receives coordinates and
         addresses in order to return routes and address suggestions, and is
         never told who they belong to
+      </li>
+      <li>
+        <strong>Expo</strong> — delivers notifications sent from StartBy's
+        server to your phone, and receives only the token that identifies the
+        device and the words of the message
       </li>
       <li><strong>Sentry</strong> — receives crash reports, as described above</li>
       <li><strong>Apple</strong> — handles sign-in and any payment</li>
@@ -294,4 +338,3 @@
 </body>
  
 </html>
- 
